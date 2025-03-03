@@ -8,42 +8,61 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+  <main> 
+    <section class="container"> 
+      <img class="star-icon"> <!-- link img --> 
+      <h1 class="title">
+        How did we do?
+      </h1>
+      <p class="paragraph">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
   
-  <div class="attribution">
+        <!-- Rating state start -->
+      <div class="button-container">
+        <ul> 
+          <li> 
+            <button>1</button> <!-- you should be able to target with nth child-->
+          </li>
+          <li> 
+            <button>2</button>
+          </li>
+          <li> 
+            <button>3</button>
+          </li>
+          <li> 
+            <button>4</button>
+          </li>
+          <li> 
+            <button>5</button>
+          </li>
+        </ul>
+      </div>
+      <button>Submit</button>
+  
+        <!-- Rating state end -->
+  
+        <!-- Thank you state start -->
+  
+        <h3>You selected <!-- Add rating here --> out of 5</h2>
+  
+        <h2>Thank you!</h2>
+  
+        <p class="thank-you-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don't hesitate to get in touch!
+        </p>
+          <!-- Thank you state end -->
+    </section>
+  </main>
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Iman Osman</a>.
+  </footer>
+
 </body>
 </html>
