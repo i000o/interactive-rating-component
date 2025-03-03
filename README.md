@@ -41,7 +41,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 1. HTML
 2. Import resets Sass
-3.
+3. I originally had the rating buttons in an `<ul>` until I learnt about Forms with Input type Buttons.
 4.
 
 ## Time taken
@@ -68,5 +68,10 @@ Estimation: 8-10hrs
 ## Useful resources
 
 [How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)
+[HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+[](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)
+[Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) READ!
+[Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!
+[JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
 
 # interactive-rating-component
