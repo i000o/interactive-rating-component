@@ -1,0 +1,46 @@
+@use 'reset'; 
+@use 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@mixin flex-mobile { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+@mixin flex-desktop { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+$border-radius: 16px;
+$wrapper-padding: 20px;
+
+body, header, footer { 
+    margin: 20px 30px;
+}
+
+body { 
+    font-family: 'overpass', sans-serif;
+    font-weight: 400; 
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(216, 12%, 8%);
+    @include flex-mobile;
+    height: 100svh;
+}
+
+.container { 
+    background-color: hsl(213, 19%, 18%);
+    border-radius: $border-radius;
+    padding: $wrapper-padding;
+    min-width: 15em;
+}
+
+//img has a circle round it 
+
+.title { 
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
