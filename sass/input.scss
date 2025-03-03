@@ -17,13 +17,14 @@
 }
 $border-radius: 16px;
 $wrapper-padding: 20px;
+$font: 'overpass', sans-serif;
 
 body, header, footer { 
     margin: 20px 30px;
 }
 
 body { 
-    font-family: 'overpass', sans-serif;
+    font-family: $font;
     font-weight: 400; 
     color: hsl(217, 12%, 63%);
     background-color: hsl(216, 12%, 8%);
@@ -43,4 +44,40 @@ body {
 .title { 
     color: hsl(0, 0%, 100%);
     font-weight: 700;
+}
+
+.paragraph { 
+    font-size: 0.8em;
+    line-height: 160%;
+}
+
+ul { 
+    display: flex; 
+    justify-content: center;
+
+    li { 
+        margin: 10px;
+    }
+}
+
+.rating { 
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border: solid hsl(0, 0%, 97%) 1px;
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: $font;
+}
+
+.submit { 
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700; 
+    border: solid hsl(25, 97%, 53%) 1px;
+    border-radius: 20px; 
+    padding: 10px 50px;
+    color:hsl(213, 19%, 18%);
+    text-transform: uppercase;
+    font-family: $font;
+    letter-spacing: 10%;
 }

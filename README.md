@@ -1,5 +1,72 @@
 # Frontend Mentor - Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
-# interactive-rating-component
+
+## Table of contents
+
+- [Overview](#overview)
+- [Focus](#focus)
+- [Outcome](#outcome)
+- [Process](#process)
+- [Built with](#built-with)
+- [Feedback](#feedback)
+- [Lessons](#lessons)
+- [Continued development](#cont-development)
+- [Useful resources](#useful-resources)
+
+## Overview
+
+This challenge is to design and build an interactive rating component for web desktop & mobile. It will be my first time using JS for a project after spending a few months gaining confidence in front-end styling skills.
+
+## Focus
+
+My focus here is to write good and functioning JS that is clear, concise and uncomplicated.
+
+## Outcome
+
+![](./)
+
+:jigsaw: [Live Site URL]()  
+:pencil2: [Solution URL]()
+
+## Built with
+
+:gear: Semantic HTML5 markup  
+:gear: CSS  
+:gear: Desktop-first workflow  
+:gear: Sass
+:gear: JavaScript
+
+## Process
+
+1. HTML
+2. Import resets Sass
+3.
+4.
+
+## Time taken
+
+Estimation: 8-10hrs
+
+:alarm_clock: Desktop:
+:alarm_clock: Mobile:
+
+## Feedback
+
+## Lessons
+
+-
+-
+-
+
+## Continued development
+
+-
+-
+-
+
+## Useful resources
+
+[How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)
+
 # interactive-rating-component
