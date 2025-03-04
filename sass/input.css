@@ -59,6 +59,10 @@ body {
   line-height: 160%;
 }
 
+.button-container {
+  width: 100%;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -82,9 +86,26 @@ ul li {
   font-weight: 700;
   border: solid hsl(25, 97%, 53%) 1px;
   border-radius: 20px;
-  padding: 10px 50px;
+  padding: 20px;
   color: hsl(213, 19%, 18%);
   text-transform: uppercase;
   font-family: "overpass", sans-serif;
   letter-spacing: 10%;
+  width: 100%;
+}
+
+.thank-you-title {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.thank-you-p {
+  font-size: 0.8em;
+  line-height: 160%;
+}
+
+.you-selected {
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+  font-size: 0.8em;
 }/*# sourceMappingURL=input.css.map */

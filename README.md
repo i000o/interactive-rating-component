@@ -42,7 +42,8 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 1. HTML
 2. Import resets Sass
 3. I originally had the rating buttons in an `<ul>` until I learnt about Forms with Input type Buttons.
-4.
+4. Learnt about HTML forms and JS Event Listeners
+5. Learnt about how to listen for an event and trigger a function upon Submit.
 
 ## Time taken
 
@@ -55,9 +56,12 @@ Estimation: 8-10hrs
 
 ## Lessons
 
--
--
--
+- `.querySelector` vs. `.getElementByID`.
+- Event Listeners vs. Event Handlers.
+- Callback functions as functions that take place within/after another.
+- `event.preventDefault()`
+- In JS, we refer to class names with a dot.
+- Link to JS in `<head>` section of HTML, using `<script>` tag and `src=` attribute.
 
 ## Continued development
 

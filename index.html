@@ -6,11 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="sass/output.css">
+  <script src="js/script.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
-
 </head>
 <body>
   <main> 
+    <!-- Rating state start -->
     <section class="container"> 
       <img class="star-icon" src="images/icon-star.svg"> 
       <h1 class="title">
@@ -20,45 +21,36 @@
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
       </p>
+      <form action="js/script.js" target="_self" method="get" name="rating" class="form"> <!-- if parent doesn't work, try _self--> 
+        <input type="radio" class="rating" name="rating" value="1" id="rating=1">  <!-- something's wrong, your 'radio' allows for more than one input -->
+        <label for="rating-1">1</label>
+        <input type="radio" class="rating" name="rating" value="2" id="rating-2"> <!-- do these still need classes?-->
+        <label for="rating-2">2</label>
+        <input type="radio" class="rating" name="rating" value="3" id="rating-3"> 
+        <label for="rating-3">3</label>
+        <input type="radio" class="rating" name="rating" value="4" id="rating-4"> 
+        <label for="rating-4">4</label>
+        <input type="radio" class="rating" name="rating" value="5" id="rating-5"> 
+        <label for="rating-5">5</label>
+        <input type="submit" value="Submit"></input>
+      </form>
+    </section>
+    <!-- Rating state end -->
   
-        <!-- Rating state start -->
-  
-      <!-- Rating state end -->
-  
-      <!-- Thank you state start -->
-
+    <!-- Thank you state start -->
+    <section class="thank-you"> 
       <img class="thank-you-illustration" src="images/illustration-thank-you.svg">
   
       <h3 class="you-selected">You selected <!-- Add rating here --> out of 5</h2>
   
-      <h2 class="thank-you">Thank you!</h2>
+      <h2 class="thank-you-title">Thank you!</h2>
   
       <p class="thank-you-p">
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don't hesitate to get in touch!
       </p>
-       <!-- Thank you state end -->
-
-       <!-- FORM -->
-      <form action="/js/script.js" target="_parent" method="get" name="rating"> <!-- if parent doesn't work, try _self--> 
-        <input type="radio" id="1" name="1"> 
-        <!-- <button type="button">1</button> -->
-        <label for="1">1</label>
-        <input type="radio" id="2" name="2"> 
-        <!-- <button type="button">2</button> -->
-        <label for="2">2</label>
-        <input type="radio" id="3" name="3"> 
-        <!-- <button type="button">3</button> -->
-        <label for="3">3</label>
-        <input type="radio" id="4" name="4"> 
-        <!-- <button type="button">4</button> -->
-        <label for="4">4</label>
-        <input type="radio" id="5" name="5"> 
-        <!-- <button type="button">5</button> -->
-        <label for="5">5</label>
-        <input type="submit" value="Submit"></input>
-      </form>
     </section>
+    <!-- Thank you state end -->
   </main>
 
   <footer class="attribution">
