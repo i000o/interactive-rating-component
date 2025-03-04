@@ -94,6 +94,10 @@ ul li {
   width: 100%;
 }
 
+.thank-you {
+  display: none;
+}
+
 .thank-you-title {
   color: hsl(0, 0%, 100%);
   text-align: center;
@@ -107,6 +111,8 @@ ul li {
 .you-selected {
   color: hsl(25, 97%, 53%);
   font-weight: 400;
+  background-color: hsla(217, 12%, 63%, 0.2);
+  border-radius: 16px;
   font-size: 0.8em;
 }
 

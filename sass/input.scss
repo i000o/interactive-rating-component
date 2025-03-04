@@ -88,7 +88,9 @@ ul {
     width: 100%;
 }
 
-// THANK YOU default display none? 
+.thank-you { 
+    display: none; // default display none for thank-you state
+}
 
 .thank-you-title { 
     color: hsl(0, 0%, 100%);
@@ -103,8 +105,8 @@ ul {
 .you-selected { 
     color:hsl(25, 97%, 53%); 
     font-weight: 400;
-    // background-color: hsl(217, 12%, 63%);
-    // border-radius: $border-radius;
+    background-color: hsl(217, 12%, 63%, 20%); // gradient for transparency
+    border-radius: $border-radius;
     // padding 
     font-size: 0.8em;
 }
