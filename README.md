@@ -44,6 +44,9 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 3. I originally had the rating buttons in an `<ul>` until I learnt about Forms with Input type Buttons.
 4. Learnt about HTML forms and JS Event Listeners
 5. Learnt about how to listen for an event and trigger a function upon Submit.
+6. Added more JS with variables to get the You chose X to work
+7. Had duplicate text, so edited See below
+8. Could add a Please choose a rating if Submit is hit on its own but can't figure this out right now...
 
 ## Time taken
 
@@ -62,6 +65,12 @@ Estimation: 8-10hrs
 - `event.preventDefault()`
 - In JS, we refer to class names with a dot.
 - Link to JS in `<head>` section of HTML, using `<script>` tag and `src=` attribute.
+- Application of Scope -
+
+"Scope: By declaring selectedRating within the function, we make sure that it is scoped to that function and gets updated each time the event listener runs. If it were declared outside the function, it might not correctly reflect the user's current selection on subsequent submissions... Declaring selectedRating inside the function ensures that we always work with the most up-to-date selection made by the user."
+
+- Setting Text Content: You can also use .textContent to replace the existing text within an element. for `.textContent` method.
+- `You selected ${selectedRating.value} out of 5`;`
 
 ## Continued development
 
@@ -77,5 +86,10 @@ Estimation: 8-10hrs
 [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) READ!
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
+
+TO DO
+
+/ Style the default state to completion
+/ Style the thank-you state to completion
 
 # interactive-rating-component

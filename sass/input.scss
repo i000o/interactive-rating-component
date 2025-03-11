@@ -1,5 +1,15 @@
 @use 'reset'; 
 @use 'footer';
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 @mixin flex-mobile { 
     display: flex;
@@ -35,16 +45,26 @@ body {
 
 .container { 
     background-color: hsl(213, 19%, 18%);
+    // background: linear-gradient(#252d37 50%);
     border-radius: $border-radius;
     padding: $wrapper-padding;
-    min-width: 15em;
+    min-width: 10em;
+    padding: 40px 30px;
+    // there's a gradient - it's darker on the bottom 
+    // mix-blend-mode: screen;
 }
 
-//img has a circle round it 
+.star-icon { 
+    border: solid hsl(213, 19%, 18%); 
+    border-radius: $border-radius;
+    // padding: 10px;
+    width: 15px;
+}
 
 .title { 
     color: hsl(0, 0%, 100%);
     font-weight: 700;
+    font-size: 1.4em;
 }
 
 .paragraph { 
@@ -52,44 +72,34 @@ body {
     line-height: 160%;
 }
 
-.button-container { 
-    width: 100%; // trying to stretch the ratings the full width 
-}
+.form { 
 
-ul { 
-    display: flex; 
-    justify-content: center;
+    label.rating { 
+        // background-color: hsl(213, 19%, 18%);
+        color: hsl(217, 12%, 63%);
+        border: solid hsl(0, 0%, 97%) 1px;
+        border-radius: 50px;
+        padding: 10px;
+        font-weight: 700;
+        // font-family: $font;
+    }
 
-    li { 
-        margin: 10px;
+    .submit { 
+        background-color: hsl(25, 97%, 53%);
+        font-weight: 700; 
+        border: solid hsl(25, 97%, 53%) 1px;
+        border-radius: 20px; 
+        padding: 20px;
+        color:hsl(213, 19%, 18%);
+        text-transform: uppercase;
+        font-family: $font;
+        letter-spacing: 10%;
+        width: 100%;
     }
 }
 
-.rating { 
-    background-color: hsl(213, 19%, 18%);
-    color: hsl(217, 12%, 63%);
-    border: solid hsl(0, 0%, 97%) 1px;
-    border-radius: 50px;
-    padding: 10px;
-    font-weight: 700;
-    font-family: $font;
-}
-
-.submit { 
-    background-color: hsl(25, 97%, 53%);
-    font-weight: 700; 
-    border: solid hsl(25, 97%, 53%) 1px;
-    border-radius: 20px; 
-    padding: 20px;
-    color:hsl(213, 19%, 18%);
-    text-transform: uppercase;
-    font-family: $font;
-    letter-spacing: 10%;
-    width: 100%;
-}
-
 .thank-you { 
-    display: none; // default display none for thank-you state
+    display: none; // default display none for thank-you state // this is affecting your JS - see Copilot response
 }
 
 .thank-you-title { 
