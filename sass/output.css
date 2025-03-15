@@ -55,18 +55,20 @@ body {
 
 .container {
   background-color: hsl(213, 19%, 18%);
-  border-radius: 16px;
+  border-radius: 25px;
   padding: 20px;
   width: 22em;
-  height: 22em;
-  padding: 40px 30px;
+  height: 23em;
+  box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
 }
 
 .star-icon {
   border: solid hsl(213, 19%, 18%);
-  border-radius: 16px;
-  width: 20px;
-  box-shadow: 0px 0px 47px 38px #15191f;
+  border-radius: 50%;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 0px 108px 100px rgba(21, 25, 31, 0.57);
   margin-bottom: 20px;
 }
 
@@ -82,20 +84,33 @@ body {
 }
 
 .form {
-  margin: 30px 0;
+  margin: 20px 0;
 }
-.form .input-flex {
+.form input[type=radio] {
+  display: none; /* Hides the default radio button */
+}
+.form .button-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   width: auto;
 }
 .form label.rating {
-  margin: 0 30px;
-  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border: solid hsl(213, 19%, 18%);
+  background: hsl(213, 19%, 18%);
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px -20px 81px 11px rgba(21, 25, 31, 0.57);
   font-size: 0.8em;
+  padding: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 .form .submit {
   background-color: hsl(25, 97%, 53%);
@@ -103,13 +118,14 @@ body {
   border: solid hsl(25, 97%, 53%) 1px;
   border-radius: 20px;
   padding: 10px;
-  color: hsl(213, 19%, 18%);
   text-transform: uppercase;
   font-family: "overpass", sans-serif;
   letter-spacing: 10%;
   width: 100%;
   margin-top: 30px;
-  font-size: 0.68em;
+  font-size: 0.75em;
+  cursor: pointer;
+  box-shadow: 0px 0px 44px 60px rgba(21, 25, 31, 0.57);
 }
 
 .thank-you {
@@ -130,7 +146,7 @@ body {
   color: hsl(25, 97%, 53%);
   font-weight: 400;
   background-color: hsla(217, 12%, 63%, 0.2);
-  border-radius: 16px;
+  border-radius: 25px;
   font-size: 0.8em;
 }
 

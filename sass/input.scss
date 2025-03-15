@@ -25,10 +25,16 @@ input[type="radio"] {
     align-items: center;
     text-align: left;
 }
-$border-radius: 16px;
+@mixin centre-button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$border-radius: 25px;
 $wrapper-padding: 20px;
 $font: 'overpass', sans-serif;
 $central-text: center;
+
 
 body, header, footer { 
     margin: 20px 30px;
@@ -45,22 +51,24 @@ body {
 
 .container { 
     background-color: hsl(213, 19%, 18%);
-    // background: linear-gradient(#252d37 50%);
     border-radius: $border-radius;
     padding: $wrapper-padding;
     width: 22em;
-    height: 22em;
-    padding: 40px 30px;
-    // there's a gradient - it's darker on the bottom 
-    // mix-blend-mode: screen;
+    height: 23em;
+    // box-shadow: inset -5px -10px 71px 13px rgba(21, 25, 31, 0.57);
+    // box-shadow: inset -205px -55px 54px 11px rgba(21, 25, 31, 0.57);
+    // box-shadow: inset 5px -45px 68px 17px rgba(21, 25, 31, 0.57);
+    box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
 }
 
 .star-icon { 
     border: solid hsl(213, 19%, 18%); 
-    border-radius: $border-radius;
-    // padding: 20px;
-    width: 20px;
-    box-shadow: 0px 0px 47px 38px #15191f;
+    border-radius: 50%;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    // box-shadow: 0px 0px 40px 21px #15191F;
+    box-shadow: 0px 0px 108px 100px rgba(21, 25, 31, 0.57);
     margin-bottom: 20px;
 }
 
@@ -77,30 +85,35 @@ body {
 
 .form { 
 
-    margin: 30px 0;
+    margin: 20px 0;
 
-    .input-flex { 
+    input[type="radio"] {
+        display: none; /* Hides the default radio button */
+      }
+
+    .button-container { 
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
         width: auto;
     }
 
+
     label.rating { 
-        margin: 0 30px;
-        appearance: none;
-        // display: none;
-        // background-color: hsl(213, 19%, 18%);
-        // background-color: red;
-        // color: hsl(217, 12%, 63%);
-        // border: solid hsl(0, 0%, 97%) 1px;
-        border-radius: 50%; // width and height need to be equal to craete a circle 
-        // padding: 15px;
-        // font-weight: 700;
-        // font-family: $font;
+        @include centre-button-text;
+        margin: 0 10px;
+        border: solid hsl(213, 19%, 18%); 
+        background: hsl(213, 19%, 18%);
+        border-radius: 50%; 
+        width: 20px;
+        height: 20px;
+        // box-shadow: 0px 0px 86px 45px rgba(21, 25, 31, 0.57);
+        box-shadow: 0px -20px 81px 11px rgba(21, 25, 31, 0.57);
         font-size: 0.8em;
-        // box shadow on all the buttons!!!!!! 
+        padding: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        z-index: 10; // Much easier than last time 
     }
 
     .submit { 
@@ -109,20 +122,20 @@ body {
         border: solid hsl(25, 97%, 53%) 1px;
         border-radius: 20px; 
         padding: 10px;
-        color:hsl(213, 19%, 18%);
         text-transform: uppercase;
         font-family: $font;
         letter-spacing: 10%;
         width: 100%;
         margin-top: 30px;
-        font-size: 0.68em;
-        // it's a box shadow!!! not a gradient! 
+        font-size: 0.75em;
+        cursor: pointer;
+        box-shadow: 0px 0px 44px 60px rgba(21, 25, 31, 0.57);
     }
 }
 
 
 .thank-you { 
-    display: none; // default display none for thank-you state
+    display: none; // default for thank-you state
 }
 
 .thank-you-title { 
