@@ -99,7 +99,7 @@ body {
 }
 
 .thank-you { 
-    display: none; // default display none for thank-you state // this is affecting your JS - see Copilot response
+    display: none; // default display none for thank-you state
 }
 
 .thank-you-title { 
@@ -119,4 +119,8 @@ body {
     border-radius: $border-radius;
     // padding 
     font-size: 0.8em;
+}
+
+.please-submit { 
+    display: none;
 }

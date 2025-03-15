@@ -120,4 +120,8 @@ body {
   font-size: 0.8em;
 }
 
+.please-submit {
+  display: none;
+}
+
 /*# sourceMappingURL=output.css.map */

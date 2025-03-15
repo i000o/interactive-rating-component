@@ -47,6 +47,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 6. Added more JS with variables to get the You chose X to work
 7. Had duplicate text, so edited See below
 8. Could add a Please choose a rating if Submit is hit on its own but can't figure this out right now...
+9. I debugged my please-submit state!
 
 ## Time taken
 
@@ -71,6 +72,9 @@ Estimation: 8-10hrs
 
 - Setting Text Content: You can also use .textContent to replace the existing text within an element. for `.textContent` method.
 - `You selected ${selectedRating.value} out of 5`;`
+- I'm curious about the relationships between classes in HTML and JavaScript now, it's so different to CSS.
+- I'm curious about `display: none;` defaults and overrides between CSS and JS. Their relationship is also different.
+- AI: "Think of console.log as your flashlight when navigating through the "dark" parts of your code" Love this
 
 ## Continued development
 
