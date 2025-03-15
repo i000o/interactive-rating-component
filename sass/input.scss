@@ -48,7 +48,8 @@ body {
     // background: linear-gradient(#252d37 50%);
     border-radius: $border-radius;
     padding: $wrapper-padding;
-    min-width: 10em;
+    width: 22em;
+    height: 22em;
     padding: 40px 30px;
     // there's a gradient - it's darker on the bottom 
     // mix-blend-mode: screen;
@@ -57,8 +58,10 @@ body {
 .star-icon { 
     border: solid hsl(213, 19%, 18%); 
     border-radius: $border-radius;
-    // padding: 10px;
-    width: 15px;
+    // padding: 20px;
+    width: 20px;
+    box-shadow: 0px 0px 47px 38px #15191f;
+    margin-bottom: 20px;
 }
 
 .title { 
@@ -74,14 +77,30 @@ body {
 
 .form { 
 
+    margin: 30px 0;
+
+    .input-flex { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
     label.rating { 
+        margin: 0 30px;
+        appearance: none;
+        // display: none;
         // background-color: hsl(213, 19%, 18%);
-        color: hsl(217, 12%, 63%);
-        border: solid hsl(0, 0%, 97%) 1px;
-        border-radius: 50px;
-        padding: 10px;
-        font-weight: 700;
+        // background-color: red;
+        // color: hsl(217, 12%, 63%);
+        // border: solid hsl(0, 0%, 97%) 1px;
+        border-radius: 50%; // width and height need to be equal to craete a circle 
+        // padding: 15px;
+        // font-weight: 700;
         // font-family: $font;
+        font-size: 0.8em;
+        // box shadow on all the buttons!!!!!! 
     }
 
     .submit { 
@@ -89,14 +108,18 @@ body {
         font-weight: 700; 
         border: solid hsl(25, 97%, 53%) 1px;
         border-radius: 20px; 
-        padding: 20px;
+        padding: 10px;
         color:hsl(213, 19%, 18%);
         text-transform: uppercase;
         font-family: $font;
         letter-spacing: 10%;
         width: 100%;
+        margin-top: 30px;
+        font-size: 0.68em;
+        // it's a box shadow!!! not a gradient! 
     }
 }
+
 
 .thank-you { 
     display: none; // default display none for thank-you state
@@ -117,10 +140,12 @@ body {
     font-weight: 400;
     background-color: hsl(217, 12%, 63%, 20%); // gradient for transparency
     border-radius: $border-radius;
-    // padding 
+    // padding:
     font-size: 0.8em;
 }
 
 .please-submit { 
     display: none;
 }
+
+// ACTIVE FOCUS STATES 

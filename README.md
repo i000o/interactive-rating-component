@@ -48,6 +48,15 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 7. Had duplicate text, so edited See below
 8. Could add a Please choose a rating if Submit is hit on its own but can't figure this out right now...
 9. I debugged my please-submit state!
+10. Doesn't register 1 right now
+11. I had these original styles on the radio before I read the article - didn't know about `appearance: none;`. Used to adjust "platform-native styling based on the user's operating system".
+12. It's `box-shadow` not gradient!
+
+`    // color: hsl(217, 12%, 63%);
+    // border: solid hsl(0, 0%, 97%) 1px;
+    // border-radius: 50px;
+    // padding: 10px;
+    // font-weight: 700;`
 
 ## Time taken
 
@@ -87,7 +96,7 @@ Estimation: 8-10hrs
 [How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)
 [HTML Forms](https://www.w3schools.com/html/html_forms.asp)
 [](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)
-[Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) READ!
+[Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) Resume at Step 4!
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
 
