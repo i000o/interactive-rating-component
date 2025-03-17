@@ -52,12 +52,8 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 11. I had these original styles on the radio before I read the article - didn't know about `appearance: none;`. Used to adjust "platform-native styling based on the user's operating system".
 12. It's `box-shadow` not gradient!
 13. Experimented with a lot of box-shadows
-
-`    // color: hsl(217, 12%, 63%);
-    // border: solid hsl(0, 0%, 97%) 1px;
-    // border-radius: 50px;
-    // padding: 10px;
-    // font-weight: 700;`
+14. Debugged input 1 - HTML syntax error
+15. Added `:checked` and `:focus-visible` states.
 
 ## Time taken
 
@@ -87,6 +83,8 @@ Estimation: 8-10hrs
 - AI: "Think of console.log as your flashlight when navigating through the "dark" parts of your code" Love this
 - Syntax for `attribute selector` in CSS `[]`
 - `inset` on `box-shadow`
+- `:checked` vs. `:active`
+- Next sibling combinator `+` in CSS
 
 ## Continued development
 

@@ -31,7 +31,7 @@ input[type="radio"] {
     align-items: center;
 }
 $border-radius: 25px;
-$wrapper-padding: 20px;
+$wrapper-padding: 30px;
 $font: 'overpass', sans-serif;
 $central-text: center;
 
@@ -54,11 +54,12 @@ body {
     border-radius: $border-radius;
     padding: $wrapper-padding;
     width: 22em;
-    height: 23em;
+    height: 22em;
     // box-shadow: inset -5px -10px 71px 13px rgba(21, 25, 31, 0.57);
     // box-shadow: inset -205px -55px 54px 11px rgba(21, 25, 31, 0.57);
     // box-shadow: inset 5px -45px 68px 17px rgba(21, 25, 31, 0.57);
-    box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
+    // box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
+    box-shadow: inset 0px -30px 23px 2px #121417;
 }
 
 .star-icon { 
@@ -67,7 +68,6 @@ body {
     padding: 8px;
     width: 35px;
     height: 35px;
-    // box-shadow: 0px 0px 40px 21px #15191F;
     box-shadow: 0px 0px 108px 100px rgba(21, 25, 31, 0.57);
     margin-bottom: 20px;
 }
@@ -76,6 +76,8 @@ body {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .paragraph { 
@@ -87,16 +89,29 @@ body {
 
     margin: 20px 0;
 
-    input[type="radio"] {
-        display: none; /* Hides the default radio button */
+    input[type="radio"] { // initially had this set to display: none until focus states 
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
       }
+
+    input[type="radio"]:checked + label {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(213, 19%, 18%);
+        transition: 0.5s;
+        border: solid hsl(213, 19%, 18%);
+    }
+
+    input[type="radio"]:focus-visible + label { 
+        outline: solid hsl(25, 97%, 53%) 5px;
+        outline-offset: 2px; 
+    }
 
     .button-container { 
         display: flex;
         justify-content: center;
         width: auto;
     }
-
 
     label.rating { 
         @include centre-button-text;
@@ -106,7 +121,6 @@ body {
         border-radius: 50%; 
         width: 20px;
         height: 20px;
-        // box-shadow: 0px 0px 86px 45px rgba(21, 25, 31, 0.57);
         box-shadow: 0px -20px 81px 11px rgba(21, 25, 31, 0.57);
         font-size: 0.8em;
         padding: 20px;
@@ -114,6 +128,13 @@ body {
         cursor: pointer;
         position: relative;
         z-index: 10; // Much easier than last time 
+    }
+
+    label.rating:hover { 
+        background-color: hsl(25, 97%, 53%);
+        transition: 0.2s;
+        color: hsl(213, 19%, 18%);
+        // why does this work if it should be on input as the others? 
     }
 
     .submit { 
@@ -130,6 +151,16 @@ body {
         font-size: 0.75em;
         cursor: pointer;
         box-shadow: 0px 0px 44px 60px rgba(21, 25, 31, 0.57);
+    }
+
+    .submit:hover { 
+        background-color: hsl(0, 0%, 100%);
+        border: solid hsl(0, 0%, 100%) 1px;
+        transition: 0.2s;
+    }
+
+    .submit:focus-visible { 
+        outline: solid hsl(0, 0%, 100%) 5px;
     }
 }
 
@@ -161,4 +192,4 @@ body {
     display: none;
 }
 
-// ACTIVE FOCUS STATES 
+// Next is style the thank-you page 

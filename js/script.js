@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
             thankYouCard.style.display = "none";
         }
     });
+
+    // Clear radio button selection on page load
+    window.addEventListener('load', () => {
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach((radio) => {
+        radio.checked = false; // Uncheck all radio buttons
+        });
+    });
 });
 
 

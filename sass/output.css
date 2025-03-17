@@ -56,10 +56,10 @@ body {
 .container {
   background-color: hsl(213, 19%, 18%);
   border-radius: 25px;
-  padding: 20px;
+  padding: 30px;
   width: 22em;
-  height: 23em;
-  box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
+  height: 22em;
+  box-shadow: inset 0px -30px 23px 2px #121417;
 }
 
 .star-icon {
@@ -76,6 +76,8 @@ body {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .paragraph {
@@ -87,7 +89,19 @@ body {
   margin: 20px 0;
 }
 .form input[type=radio] {
-  display: none; /* Hides the default radio button */
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.form input[type=radio]:checked + label {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(213, 19%, 18%);
+  transition: 0.5s;
+  border: solid hsl(213, 19%, 18%);
+}
+.form input[type=radio]:focus-visible + label {
+  outline: solid hsl(25, 97%, 53%) 5px;
+  outline-offset: 2px;
 }
 .form .button-container {
   display: flex;
@@ -112,6 +126,11 @@ body {
   position: relative;
   z-index: 10;
 }
+.form label.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  transition: 0.2s;
+  color: hsl(213, 19%, 18%);
+}
 .form .submit {
   background-color: hsl(25, 97%, 53%);
   font-weight: 700;
@@ -126,6 +145,14 @@ body {
   font-size: 0.75em;
   cursor: pointer;
   box-shadow: 0px 0px 44px 60px rgba(21, 25, 31, 0.57);
+}
+.form .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  border: solid hsl(0, 0%, 100%) 1px;
+  transition: 0.2s;
+}
+.form .submit:focus-visible {
+  outline: solid hsl(0, 0%, 100%) 5px;
 }
 
 .thank-you {
