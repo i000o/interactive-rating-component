@@ -54,14 +54,16 @@ body {
   height: 100svh;
 }
 
-.container {
+.container, .thank-you {
   background-color: hsl(213, 19%, 18%);
   border-radius: 25px;
   padding: 30px;
+}
+
+.container {
   width: 22em;
   height: 22em;
   box-shadow: inset 0px -30px 23px 2px #121417;
-  display: none;
 }
 
 .star-icon {
@@ -82,7 +84,7 @@ body {
   margin-bottom: 10px;
 }
 
-.paragraph {
+.paragraph, .please-submit {
   font-size: 0.8em;
   line-height: 160%;
 }
@@ -158,10 +160,7 @@ body {
 }
 
 .thank-you {
-  display: block;
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 25px;
-  padding: 30px;
+  display: none;
   width: 23em;
   height: 23em;
   text-align: center;
@@ -185,15 +184,11 @@ body {
 
 .thank-you-title {
   color: hsl(0, 0%, 100%);
-  margin-top: 30px;
+  margin: 30px 0 10px 0;
 }
 
 .thank-you-p {
   font-size: 0.8em;
   line-height: 160%;
   margin: 0 10px;
-}
-
-.please-submit {
-  display: none;
 }/*# sourceMappingURL=input.css.map */

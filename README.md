@@ -16,7 +16,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Overview
 
-This challenge is to design and build an interactive rating component for web desktop & mobile. It will be my first time using JS for a project after spending a few months gaining confidence in front-end styling skills.
+This challenge is to design and build an interactive rating component for web desktop & mobile. It will be my first time using JS for a project after spending time gaining confidence in front-end static styling.
 
 ## Focus
 
@@ -39,21 +39,19 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 ## Process
 
-1. HTML
-2. Import resets Sass
-3. I originally had the rating buttons in an `<ul>` until I learnt about Forms with Input type Buttons.
-4. Learnt about HTML forms and JS Event Listeners
-5. Learnt about how to listen for an event and trigger a function upon Submit.
-6. Added more JS with variables to get the You chose X to work
-7. Had duplicate text, so edited See below
-8. Could add a Please choose a rating if Submit is hit on its own but can't figure this out right now...
-9. I debugged my please-submit state!
-10. Doesn't register 1 right now
-11. I had these original styles on the radio before I read the article - didn't know about `appearance: none;`. Used to adjust "platform-native styling based on the user's operating system".
-12. It's `box-shadow` not gradient!
-13. Experimented with a lot of box-shadows
-14. Debugged input 1 - HTML syntax error
-15. Added `:checked` and `:focus-visible` states.
+1. I structured the HTML planning ahead for functionality.
+2. I imported my typical resets in Sass.
+3. I researched HTML Forms, with `<input>` and `<label>` pairs after previously setting up an `<ul>` of `<buttons>`.
+4. I researched Event Listeners in Javascript with the `.addEventListener` method.
+5. I researched triggering a function upon Submit with the parameter `"submit"` as event type and `function(e)` as the callback function.
+6. I continually refined my JS by adding more variables and lines like `e.preventDefault();` for instance. This also included the function for the feedback "You selected X out of 5". I made a variable called `selectedRating` and used the line `selectedRating.textContent = selectedRating.value;`.
+7. I experimented with using a "Please choose a rating" message if user hits Submit with no rating, but decided against this for design simplicity for now.
+8. For a while, the page wasn't registering `input 1` but it was all the others. Turned out, I had a small HTML syntax error so that was easily fixed.
+9. I learnt about `appearance: none` on radio buttons and that they're "used to adjust "platform-native styling based on the user's operating system".
+10. I applied `box-shadow` to elements to create the gradient in the container and around the buttons and star icon.
+11. I added `:checked` and `:focus-visible` states.
+12. I styled the `thank-you` card.
+13. Refined my Sass to clean up my CSS file.
 
 ## Time taken
 
@@ -67,9 +65,9 @@ Estimation: 8-10hrs
 ## Lessons
 
 - `.querySelector` vs. `.getElementByID`.
-- Event Listeners vs. Event Handlers.
-- Callback functions as functions that take place within/after another.
-- `event.preventDefault()`
+- Event Listeners.
+- Callback functions as functions that take place within/after another function.
+- `event.preventDefault()` to prevent default event behaviour. In this instance, to have the event function pass on the same webpage, not to load another.
 - In JS, we refer to class names with a dot.
 - Link to JS in `<head>` section of HTML, using `<script>` tag and `src=` attribute.
 - Application of Scope -
@@ -85,25 +83,22 @@ Estimation: 8-10hrs
 - `inset` on `box-shadow`
 - `:checked` vs. `:active`
 - Next sibling combinator `+` in CSS
+- I need to starting forking my own designs
 
 ## Continued development
 
--
--
--
+- I'd like to continue using Copilot to help me Javascript. It was very useful to me in breaking down syntax and answering my questions about why we make certain use of Javascript in various situations. This took me from not being able to write JS from scratch, but to gather a code block that I could understand slowly.
+- I want to remain very curious about Javascript and how it works. I've come a long way with HTML & CSS and I want to build this same confidence in Javascript. I understand that as an OOP, it's a different beast, but I want to bring my inquisitveness to this language too, even more so. I want to understand what Javascript I'm writing and why, not just be able to produce it without deeper curiousity.
+- I'm getting excited about writing more complex programs now :slightly_smiling_face:
 
 ## Useful resources
 
 [How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)
-[HTML Forms](https://www.w3schools.com/html/html_forms.asp)
-[](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)
-[Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) Resume at Step 4!
+[HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
+[](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)  
+[Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)  
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
-
-TO DO
-
-/ Style the default state to completion
-/ Style the thank-you state to completion
+Microsoft Copilot - AI Assistance
 
 # interactive-rating-component

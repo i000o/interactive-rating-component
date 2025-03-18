@@ -30,6 +30,11 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
 }
+@mixin shared-card-state-styles { 
+    background-color: hsl(213, 19%, 18%);
+    border-radius: $border-radius;
+    padding: $wrapper-padding;
+}
 $border-radius: 25px;
 $wrapper-padding: 30px;
 $font: 'overpass', sans-serif;
@@ -49,10 +54,11 @@ body {
     height: 100svh;
 }
 
+.container, .thank-you { 
+    @include shared-card-state-styles;
+}
+
 .container { 
-    background-color: hsl(213, 19%, 18%);
-    border-radius: $border-radius;
-    padding: $wrapper-padding;
     width: 22em;
     height: 22em;
     // box-shadow: inset -5px -10px 71px 13px rgba(21, 25, 31, 0.57);
@@ -60,7 +66,7 @@ body {
     // box-shadow: inset 5px -45px 68px 17px rgba(21, 25, 31, 0.57);
     // box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
     box-shadow: inset 0px -30px 23px 2px #121417;
-    display: none; // temporary 
+    // display: none; // temporary 
 }
 
 .star-icon { 
@@ -81,7 +87,7 @@ body {
     margin-bottom: 10px;
 }
 
-.paragraph { 
+.paragraph, .please-submit { 
     font-size: 0.8em;
     line-height: 160%;
 }
@@ -169,11 +175,8 @@ body {
 
 .thank-you {
     // @include flex-mobile; do I need this? 
-    // display: none; // default for thank-you state
-    display: block;
-    background-color: hsl(213, 19%, 18%);
-    border-radius: $border-radius;
-    padding: $wrapper-padding;
+    display: none; // default for thank-you state
+    // display: block; for styling 
     width: 23em;
     height: 23em;
     text-align: $central-text;
@@ -199,7 +202,7 @@ body {
 
 .thank-you-title { 
     color: hsl(0, 0%, 100%);
-    margin-top: 30px;
+    margin: 30px 0 10px 0;
 }
 
 .thank-you-p { 
@@ -208,10 +211,8 @@ body {
     margin: 0 10px;
 }
 
-.please-submit { 
-    display: none; // default
-}
+// .please-submit { 
+//     display: none; // default
+// }
 
 // Could I contain these styles nested inside .thank-you class? 
-
-// Next is style the thank-you page 
