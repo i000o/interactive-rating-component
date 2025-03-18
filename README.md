@@ -34,7 +34,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 :gear: Semantic HTML5 markup  
 :gear: CSS  
 :gear: Desktop-first workflow  
-:gear: Sass
+:gear: Sass  
 :gear: JavaScript
 
 ## Process
@@ -57,8 +57,8 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 Estimation: 8-10hrs
 
-:alarm_clock: Desktop:
-:alarm_clock: Mobile:
+:timer_clock: Desktop:  
+:timer_clock: Mobile:
 
 ## Feedback
 
@@ -72,33 +72,33 @@ Estimation: 8-10hrs
 - Link to JS in `<head>` section of HTML, using `<script>` tag and `src=` attribute.
 - Application of Scope -
 
-"Scope: By declaring selectedRating within the function, we make sure that it is scoped to that function and gets updated each time the event listener runs. If it were declared outside the function, it might not correctly reflect the user's current selection on subsequent submissions... Declaring selectedRating inside the function ensures that we always work with the most up-to-date selection made by the user."
+**"Scope: By declaring `selectedRating` within the function, we make sure that it is scoped to that function and gets updated each time the event listener runs. If it were declared outside the function, it might not correctly reflect the user's current selection on subsequent submissions... Declaring selectedRating inside the function ensures that we always work with the most up-to-date selection made by the user."**
 
-- Setting Text Content: You can also use .textContent to replace the existing text within an element. for `.textContent` method.
-- `You selected ${selectedRating.value} out of 5`;`
+- You can use the `.textContent` method to replace the existing text within an element.
+- Using `template literals` in "You selected `${selectedRating.value}` out of 5".
 - I'm curious about the relationships between classes in HTML and JavaScript now, it's so different to CSS.
 - I'm curious about `display: none;` defaults and overrides between CSS and JS. Their relationship is also different.
-- AI: "Think of console.log as your flashlight when navigating through the "dark" parts of your code" Love this
-- Syntax for `attribute selector` in CSS `[]`
-- `inset` on `box-shadow`
-- `:checked` vs. `:active`
-- Next sibling combinator `+` in CSS
-- I need to starting forking my own designs
+- AI: **"Think of console.log as your flashlight when navigating through the "dark" parts of your code".** I love this analogy. :flashlight:
+- Syntax for `attribute selector` in CSS is `[]` like in `input[type="radio]`.
+- `inset` on `box-shadow` to make the shadow cover the inside, not outer edge of box/container.
+- The difference between `:checked` vs. `:active`, the latter being a more momentary state.
+- Next sibling combinator `+` in CSS as in `input[type="radio"]:checked + label`.
 
 ## Continued development
 
-- I'd like to continue using Copilot to help me Javascript. It was very useful to me in breaking down syntax and answering my questions about why we make certain use of Javascript in various situations. This took me from not being able to write JS from scratch, but to gather a code block that I could understand slowly.
-- I want to remain very curious about Javascript and how it works. I've come a long way with HTML & CSS and I want to build this same confidence in Javascript. I understand that as an OOP, it's a different beast, but I want to bring my inquisitveness to this language too, even more so. I want to understand what Javascript I'm writing and why, not just be able to produce it without deeper curiousity.
+- I'd like to continue using Copilot to help me Javascript. It was very useful to me in breaking down syntax and answering my questions about why we make certain use of Javascript in various situations. This took me from not being able to write JS from scratch to gathering a code block that I could understand slowly.
+- I want to remain very curious about Javascript and how it works. I've come a long way with HTML & CSS and I want to build this same confidence in Javascript. I understand that as an OOP, it's a different beast, :dragon: but I want to bring my inquisiveness to this language too, even more so. I want to understand what Javascript I'm writing and why, not just be able to produce it without deeper curiosity.
 - I'm getting excited about writing more complex programs now :slightly_smiling_face:
+- I'd like to start forking my own repos to experiment with different outcomes while preserving my code base so I can easily retract changes. This will allow me more practice for submitting and merging pull requests, as well.
 
 ## Useful resources
 
-[How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)
+[How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)  
 [HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
 [](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)  
 [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)  
-[Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!
-[JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
+[Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!  
+[JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)  
 Microsoft Copilot - AI Assistance
 
 # interactive-rating-component
