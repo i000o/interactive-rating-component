@@ -24,7 +24,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 ## Outcome
 
-![](./images/rating-desktop.png)
+![](images/rating-desktop.png)
 
 :jigsaw: [Live Site URL](https://i000o.github.io/interactive-rating-component/)  
 :pencil2: [Solution URL]()
@@ -94,11 +94,11 @@ _"Scope: By declaring `selectedRating` within the function, we make sure that it
 
 ## Useful resources
 
-[HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
+Microsoft Copilot - AI Assistance
 Frontend Mentor Discord on this solution  
+[HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
 [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)  
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!  
-[JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)  
-Microsoft Copilot - AI Assistance
+[JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
 
 # interactive-rating-component
