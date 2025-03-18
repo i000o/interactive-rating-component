@@ -24,9 +24,9 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 ## Outcome
 
-![](./)
+![](./images/rating-desktop.png)
 
-:jigsaw: [Live Site URL]()  
+:jigsaw: [Live Site URL](https://i000o.github.io/interactive-rating-component/)  
 :pencil2: [Solution URL]()
 
 ## Built with
@@ -52,6 +52,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 11. I added `:checked` and `:focus-visible` states.
 12. I styled the `thank-you` card.
 13. Refined my Sass to clean up my CSS file.
+14. I couldn't figure out the exact `box-shadow` set up in the design, particularly for the Thank-you state. I'll ask for feedback on this.
 
 ## Time taken
 
@@ -99,11 +100,5 @@ Frontend Mentor Discord on this solution
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!  
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)  
 Microsoft Copilot - AI Assistance
-
-LEFT TO DO
-
-- box-shadow on thank-you container
-- check mobile margins
-- check responsiveness - do I even need media queries?
 
 # interactive-rating-component
