@@ -60,6 +60,7 @@ body {
     // box-shadow: inset 5px -45px 68px 17px rgba(21, 25, 31, 0.57);
     // box-shadow: inset -125px -80px 99px -23px rgba(21, 25, 31, 0.57);
     box-shadow: inset 0px -30px 23px 2px #121417;
+    display: none; // temporary 
 }
 
 .star-icon { 
@@ -164,19 +165,25 @@ body {
     }
 }
 
+// THANK YOU STATE 
 
-.thank-you { 
-    display: none; // default for thank-you state
-}
-
-.thank-you-title { 
-    color: hsl(0, 0%, 100%);
+.thank-you {
+    // @include flex-mobile; do I need this? 
+    // display: none; // default for thank-you state
+    display: block;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: $border-radius;
+    padding: $wrapper-padding;
+    width: 23em;
+    height: 23em;
     text-align: $central-text;
+    // add box-shadow 
 }
 
-.thank-you-p { 
-    font-size: 0.8em; 
-    line-height: 160%;
+.thank-you-illustration { 
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .you-selected { 
@@ -184,12 +191,27 @@ body {
     font-weight: 400;
     background-color: hsl(217, 12%, 63%, 20%); // gradient for transparency
     border-radius: $border-radius;
-    // padding:
+    padding: 5px;
     font-size: 0.8em;
+    margin: 0 65px;
+}
+
+
+.thank-you-title { 
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+.thank-you-p { 
+    font-size: 0.8em; 
+    line-height: 160%;
+    margin: 0 10px;
 }
 
 .please-submit { 
-    display: none;
+    display: none; // default
 }
+
+// Could I contain these styles nested inside .thank-you class? 
 
 // Next is style the thank-you page 
