@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  width: 22em;
+  width: 21em;
   height: 22em;
   box-shadow: inset 0px -30px 23px 2px #121417;
 }
@@ -160,7 +160,7 @@ body {
 
 .thank-you {
   display: none;
-  width: 23em;
+  width: 21em;
   height: 23em;
   text-align: center;
 }
@@ -190,6 +190,10 @@ body {
   font-size: 0.8em;
   line-height: 160%;
   margin: 0 10px;
+}
+
+.please-submit {
+  display: none;
 }
 
 /*# sourceMappingURL=output.css.map */

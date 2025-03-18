@@ -59,7 +59,7 @@ body {
 }
 
 .container { 
-    width: 22em;
+    width: 21em;
     height: 22em;
     // box-shadow: inset -5px -10px 71px 13px rgba(21, 25, 31, 0.57);
     // box-shadow: inset -205px -55px 54px 11px rgba(21, 25, 31, 0.57);
@@ -176,11 +176,11 @@ body {
 .thank-you {
     // @include flex-mobile; do I need this? 
     display: none; // default for thank-you state
-    // display: block; for styling 
-    width: 23em;
+    // display: block; for styling
+    width: 21em;
     height: 23em;
     text-align: $central-text;
-    // add box-shadow 
+    // box-shadow
 }
 
 .thank-you-illustration { 
@@ -211,8 +211,8 @@ body {
     margin: 0 10px;
 }
 
-// .please-submit { 
-//     display: none; // default
-// }
+.please-submit { 
+    display: none; // default
+}
 
 // Could I contain these styles nested inside .thank-you class? 

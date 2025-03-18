@@ -9,9 +9,9 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Outcome](#outcome)
 - [Process](#process)
 - [Built with](#built-with)
-- [Feedback](#feedback)
+<!-- - [Feedback](#feedback) -->
 - [Lessons](#lessons)
-- [Continued development](#cont-development)
+- [Development](#development)
 - [Useful resources](#useful-resources)
 
 ## Overview
@@ -55,12 +55,12 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 ## Time taken
 
-Estimation: 8-10hrs
+:timer_clock: Estimation: 8-10hrs
 
-:timer_clock: Desktop:  
-:timer_clock: Mobile:
+- Desktop:
+- Mobile:
 
-## Feedback
+<!-- ## Feedback -->
 
 ## Lessons
 
@@ -72,19 +72,19 @@ Estimation: 8-10hrs
 - Link to JS in `<head>` section of HTML, using `<script>` tag and `src=` attribute.
 - Application of Scope -
 
-**"Scope: By declaring `selectedRating` within the function, we make sure that it is scoped to that function and gets updated each time the event listener runs. If it were declared outside the function, it might not correctly reflect the user's current selection on subsequent submissions... Declaring selectedRating inside the function ensures that we always work with the most up-to-date selection made by the user."**
+_"Scope: By declaring `selectedRating` within the function, we make sure that it is scoped to that function and gets updated each time the event listener runs. If it were declared outside the function, it might not correctly reflect the user's current selection on subsequent submissions... Declaring selectedRating inside the function ensures that we always work with the most up-to-date selection made by the user."_
 
 - You can use the `.textContent` method to replace the existing text within an element.
 - Using `template literals` in "You selected `${selectedRating.value}` out of 5".
 - I'm curious about the relationships between classes in HTML and JavaScript now, it's so different to CSS.
 - I'm curious about `display: none;` defaults and overrides between CSS and JS. Their relationship is also different.
-- AI: **"Think of console.log as your flashlight when navigating through the "dark" parts of your code".** I love this analogy. :flashlight:
+- AI: _"Think of console.log as your flashlight when navigating through the "dark" parts of your code"._ I love this analogy. :flashlight:
 - Syntax for `attribute selector` in CSS is `[]` like in `input[type="radio]`.
 - `inset` on `box-shadow` to make the shadow cover the inside, not outer edge of box/container.
 - The difference between `:checked` vs. `:active`, the latter being a more momentary state.
 - Next sibling combinator `+` in CSS as in `input[type="radio"]:checked + label`.
 
-## Continued development
+## Development
 
 - I'd like to continue using Copilot to help me Javascript. It was very useful to me in breaking down syntax and answering my questions about why we make certain use of Javascript in various situations. This took me from not being able to write JS from scratch to gathering a code block that I could understand slowly.
 - I want to remain very curious about Javascript and how it works. I've come a long way with HTML & CSS and I want to build this same confidence in Javascript. I understand that as an OOP, it's a different beast, :dragon: but I want to bring my inquisiveness to this language too, even more so. I want to understand what Javascript I'm writing and why, not just be able to produce it without deeper curiosity.
@@ -93,12 +93,17 @@ Estimation: 8-10hrs
 
 ## Useful resources
 
-[How to create a Horizontal List in HTML ?](https://www.geeksforgeeks.org/how-to-create-a-horizontal-list-in-html/)  
 [HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
-[](https://discord.com/channels/824970620529279006/1195616458961592380/1195619278192386058)  
+Frontend Mentor Discord on this solution  
 [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)  
 [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!  
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)  
 Microsoft Copilot - AI Assistance
+
+LEFT TO DO
+
+- box-shadow on thank-you container
+- check mobile margins
+- check responsiveness - do I even need media queries?
 
 # interactive-rating-component
