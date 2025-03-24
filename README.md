@@ -9,7 +9,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Outcome](#outcome)
 - [Process](#process)
 - [Built with](#built-with)
-<!-- - [Feedback](#feedback) -->
 - [Lessons](#lessons)
 - [Development](#development)
 - [Useful resources](#useful-resources)
@@ -58,10 +57,7 @@ My focus here is to write good and functioning JS that is clear, concise and unc
 
 :timer_clock: Estimation: 8-10hrs
 
-- Desktop:
-- Mobile:
-
-<!-- ## Feedback -->
+- Total time including research: 16.5hrs
 
 ## Lessons
 
@@ -98,7 +94,6 @@ Microsoft Copilot - AI Assistance
 Frontend Mentor Discord on this solution  
 [HTML Forms](https://www.w3schools.com/html/html_forms.asp)  
 [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)  
-[Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) READ!  
 [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
 
 # interactive-rating-component
